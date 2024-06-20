@@ -1,0 +1,19 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Meu portfolio profissional",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Davi Felipe",
+  "license": "MIT",
+  "keywords": [],
+  "dependencies": {
+    "canvas": "^2.11.2",
+    "gsap": "^3.12.5",
+    "lodash": "^4.17.21",
+    "node": "^22.3.0",
+    "three": "^0.165.0"
+  }
+}
