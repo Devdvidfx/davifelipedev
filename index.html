@@ -41,17 +41,16 @@
     <!-- home section design -->
     <section class="about" id="home">
       <div class="home-content">
-        <h3>Olá, Eu Sou</h3>
-        <h1>Davi Felipe</h1>
-        <p>
-          Estou buscando um estágio na área do desenvolvimento, também tenho
-          conhecimento em redes e cibersegurança.
-        </p>
-        <p>
-          Atualmente estou cursando Sistemas de Informação pela faculdade
-          Unifametro.
-        </p>
-
+        <div class="infor">
+          <h3>Olá, Eu Sou</h3>
+          <h1>Davi Felipe</h1>
+          <br />
+          <h3>
+            Estou buscando um estágio na área do desenvolvimento, também tenho
+            conhecimento em redes e cibersegurança. Atualmente estou cursando
+            Sistemas de Informação pela faculdade Unifametro.
+          </h3>
+        </div>
         <div class="social-media">
           <a href="https://www.facebook.com/hyuitrexlz7984/"
             ><i class="bx bxl-facebook"></i
@@ -65,7 +64,11 @@
           <a href="https://www.linkedin.com/in/devdavifelipe/"
             ><i class="bx bxl-linkedin"></i
           ></a>
+          <a href="https://www.youtube.com/channel/UCY-24_627777777"
+            ><i class="bx bxl-youtube"></i
+          ></a>
         </div>
+      <div class="download-cv">
         <a href="">
           <button>
             <span class="botao">Download CV</span>
@@ -136,9 +139,7 @@
         <div class="services-box">
           <i class="bx bxs-paint"></i>
           <h3>Perfil na DIO</h3>
-          <p>
-            É aqui onde faço alguns dos meus cursos.
-          </p>
+          <p>É aqui onde faço alguns dos meus cursos.</p>
           <a href="https://web.dio.me/users/davifelipe17/?tab=achievements">
             <button>
               <span class="botao">Ler Mais</span>
@@ -149,8 +150,11 @@
         <div class="services-box">
           <i class="bx bx-bar-chart-alt"></i>
           <h3>Salesforce</h3>
-          <p>Plataforma Salesforce Trailhead, Sempre em busca de novos desafios e oportunidades para expandir
-            meu conhecimento e minhas habilidades na Salesforce</p>
+          <p>
+            Plataforma Salesforce Trailhead, Sempre em busca de novos desafios e
+            oportunidades para expandir meu conhecimento e minhas habilidades na
+            Salesforce
+          </p>
           <a href="https://www.salesforce.com/trailblazer/profile">
             <button>
               <span class="botao">Ler Mais</span>
@@ -252,29 +256,32 @@
 
     <!-- contact section design -->
     <section class="contact" id="contact">
-      <h2 class="heading">Entre em <span>Contato comigo!</span></h2>
-
+      <h2 class="heading">
+        Entre em contato comigo por<span>Email ou Whatsapp</span>
+      </h2>
       <form action="#">
         <div class="input-box">
-          <input type="text" placeholder="Nome Completo" />
-          <input type="email" placeholder="Endereço de Email" />
+          <input type="text" id="nome" placeholder="Nome Completo" />
+          <input type="email" id="email" placeholder="Endereço de Email" />
         </div>
         <div class="input-box">
-          <input type="number" placeholder="Número de Telefone" />
-          <input type="text" placeholder="Assunto do email" />
+          <input type="number" id="telefone" placeholder="Número de Telefone" />
+          <input type="text" id="assunto" placeholder="Assunto do email" />
         </div>
         <textarea
-          name=""
-          id=""
+          id="mensagem"
           cols="30"
           rows="10"
           placeholder="Sua Mensagem"
         ></textarea>
-        <a href="https://wa.me/5585985187084?text=Fale comigo!" class="botao-link">
-          <button type="button" class="botao">
-              Enviar Mensagem
-          </button>
-      </a>
+        <br />
+        <button onclick="enviarEmail()">Enviar Email</button>
+        <a
+          href="https://wa.me/5585985187084?text=Fale comigo!"
+          class="botao-link"
+        >
+          <button type="button" class="botao">Whatsapp</button>
+        </a>
       </form>
     </section>
 

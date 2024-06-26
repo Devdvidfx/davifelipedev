@@ -80,5 +80,17 @@ ScrollReveal().reveal('.home-img img, .services-container, .portfolio-box, .test
 ScrollReveal().reveal('.home-content h1, .about-img img', { origin: 'left' });
 ScrollReveal().reveal('.home-content h3, .home-content p, .about-content', { origin: 'right' });
 
+// Enviar email com Mailto
+function enviarEmail() {
+    const nome = document.getElementById('nome').value;
+    const email = document.getElementById('email').value;
+    const telefone = document.getElementById('telefone').value;
+    const assunto = document.getElementById('assunto').value;
+    const mensagem = document.getElementById('mensagem').value;
 
+    // Cria o link mailto
+    const link = `mailto:${email}?subject=${encodeURIComponent(assunto)}&body=${encodeURIComponent('Nome: ' + nome + '\nTelefone: ' + telefone + '\n\n' + mensagem)}`;
 
+    // Abre o link mailto
+    window.location.href = link;
+}
