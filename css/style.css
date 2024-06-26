@@ -121,6 +121,7 @@ section {
   max-width: 96rem;
 }
 .infor {
+  position: static;
   display: contents;
   flex-direction: row;
   align-items: center;
